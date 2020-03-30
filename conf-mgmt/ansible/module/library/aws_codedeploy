@@ -126,4 +126,8 @@ def main():
 
 from ansible.module_utils.basic import *
 from ansible.module_utils.urls import *
+
+if 'BOOLEANS' not in globals():
+    from ansible.module_utils.parsing.convert_bool import BOOLEANS
+
 main()
